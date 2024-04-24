@@ -1,0 +1,224 @@
+.row3{
+    height: 100%;
+    background-color: $color6 ;
+    &.flex-content{
+        &.row3{
+        .full-row{
+            
+            .blocks-container{
+                .block{
+        
+                       &.overview {
+
+                        display: flex;
+                        gap: 40px;
+                        .one-recipe {
+                            border-bottom: 10px solid $color1;
+                            box-shadow: 0px 3px 6px $color4;
+                            width: calc(50% - 20px);
+                            .block-group {
+                               
+                                &.top {
+                                    .block{
+                        
+                                        &.image {
+                                            min-height: 295px;
+                                           
+                                          
+                                            background-repeat: no-repeat;
+                                    
+                                        }
+                        
+                                    }
+                                }
+                                &.bottom {
+                                    padding: 50px;
+                                    background-color: $color5;
+                                    
+                                    .block {
+                                    
+                                        &.title-recept {
+                                    
+                                            font-size: 30px;
+                                            color: $color1;
+                                            
+                                        
+                                        }
+                                        &.text-recept {
+                                            margin-top: 20px;
+                                            margin-bottom: 20px;
+                                            h4{
+                                                
+                                            }
+                                         p{
+                                            
+                                           
+                                         }
+                                            
+                                         
+                                        }
+                                        
+                                       
+                                    }
+                                }
+                            }
+                        }
+                        
+                       }
+                    
+                    &.text{
+                        padding: 20px;
+                        
+
+                        h2{
+                            font-weight: 200;
+                         padding-top:  45px;
+                         padding-bottom: 50px;
+                           
+                        
+                        }
+                        
+
+                    }
+                    &.link{
+                        display: flex;
+                        justify-content: center;
+                        color: $color5;
+
+                        a{
+                            text-align: center;
+                            font-size: 50px;
+                        }
+                       
+                       
+
+                    }
+
+                }
+                }
+
+            }
+            }
+        }
+    
+    }
+    @media (max-width: $screen_ml) {
+        .row3{
+    height: 100%;
+    background-color: $color6 ;
+    &.flex-content{
+        &.row3{
+        .full-row{
+            
+            .blocks-container{
+                .block{
+        
+                       &.overview {
+                        @include gridloop(300, 35, 20, auto-fill);
+                        .one-recipe {
+                            &.one-item {
+                                width: unset;
+                            }
+                        }
+                       }
+                    
+                    &.text{
+                        
+                        padding: 20px;
+                        
+
+                        h2{
+                           
+                            margin: 20px;
+                        }
+                        
+
+                    }
+                    &.link{
+                        display: flex;
+                        justify-content: center;
+                        color: $color5;
+
+                        a{
+                            font-size: 50px;
+                        }
+                       
+                       
+
+                    }
+
+                }
+                }
+
+            }
+            }
+        }
+    
+    }
+
+    h4{
+        font-size: 20px;
+    }
+
+    }
+
+
+    @media (max-width: $screen_xs) {
+        .row3{
+    height: 100%;
+    background-color: $color6 ;
+    &.flex-content{
+        &.row3{
+        .full-row{
+            
+            .blocks-container{
+                .block{
+        
+                       &.overview {
+            
+                        @include gridloop(300, 35, 20, auto-fill);
+                        .one-recipe{
+                            width: unset !important;
+                        }
+                       }
+                    
+                    &.text{
+                        padding: 20px;
+                        
+
+                        h2{
+                            font-size: 25px;
+                           
+                            margin: 20px;
+                        }
+                        
+
+                    }
+                    &.link{
+                        display: flex;
+                        justify-content: center;
+                        color: $color5;
+
+                        a{
+                            font-size: 50px;
+                            text-align: center;
+                        }
+                       
+                       
+
+                    }
+
+                }
+                }
+
+            }
+            }
+        }
+    
+    }
+
+    h4{
+        font-size: 20px;
+    }
+
+    }

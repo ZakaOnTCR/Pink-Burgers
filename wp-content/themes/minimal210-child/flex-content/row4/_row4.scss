@@ -1,0 +1,170 @@
+.row {
+    &.flex-content {
+        &.row4 {
+
+
+            
+            
+            position: relative;
+
+            .block {
+                &.image {
+                    @include background-image;
+                    position: absolute;
+                    height: 100%;
+                    width: 50%;
+                    top: 0;
+                    right: 0;
+                    background-repeat: no-repeat;
+
+                    &.reverse {
+                        right: unset;
+                        left: 0;
+                    }
+                }
+            }
+
+            .full-row {
+                .blocks-container {
+                    
+                    display: flex;
+                    justify-content: space-between;
+                   
+
+                    &.reverse {  
+                        flex-direction: row-reverse;
+                        .block {
+                            
+                            &.text {
+                                padding: 75px 0px 75px 50px;
+
+                                p{
+                                    margin-bottom: 50px;
+                                }
+                                
+                            }
+                        }
+                    }
+
+
+                    .block {
+                        &.text {
+                            width: 50%;
+                            padding: 75px 50px 75px 0;
+                            box-sizing: border-box;
+                        }
+
+                        h2 {
+                            font-weight: 300;
+                        }
+
+                        p {}
+                    }
+
+                    &.link {
+                        margin: 50px;
+                        justify-content: center;
+                        display: flex;
+
+                        button {}
+                    }
+
+                }
+            }
+        }
+    }
+
+    section{
+
+   
+        background-color: antiquewhite;
+    
+
+    }
+}
+
+
+
+@media  (max-width: $screen_m) {
+    .row {
+        &.flex-content {
+            &.row4 {
+    
+                display: flex;
+                flex-direction: column-reverse;
+        
+                .block {
+                    &.image {
+                        position: relative;
+                        height: 640px;
+                        width: 100%;
+
+                        &.reverse {
+
+                        }
+                    }
+                }
+    
+                .full-row {
+                    .blocks-container {
+                        
+              
+                       
+    
+                        &.reverse {  
+                           
+                            .block {
+                                
+                                &.text {
+                                    padding: 0;
+                                    text-align: center;
+                                    width: 100%;
+    
+                                    p{
+                                        
+                                    }
+                                    
+                                }
+                            }
+                        }
+    
+    
+                        .block {
+                            &.text {
+                                padding: 0;
+                                text-align: center;
+                                width: 100%;
+                                
+                            }
+    
+                            h2 {
+                            
+                            }
+    
+                            p {
+                                margin-bottom: 50px;
+                                margin-top: 30px;
+                            }
+                        
+    
+                        &.link {
+                            padding-bottom: 20px;
+                     
+    
+                            button {}
+                        }
+                    }
+                    }
+                }
+            }
+        }
+    
+        section{
+    
+       
+      
+    
+        }
+    }
+    
+}
