@@ -1,0 +1,30 @@
+.minimal-pagination{
+    width: 100%;
+
+    .page-of{
+        display: none;
+    }
+
+	a, span{
+		background-color: $color5;
+		padding: 0;
+		margin-right: 20px;
+		font-size: 16px;
+	}
+
+    .page-numbers{
+		@include main-transition();
+        display: inline-block;
+        text-align: center;
+		color: $color4;
+
+        &:hover{
+			color: $color1;
+        }
+
+        &.current{
+			color: $color1;
+			font-family: $font1;
+        }
+    }
+}

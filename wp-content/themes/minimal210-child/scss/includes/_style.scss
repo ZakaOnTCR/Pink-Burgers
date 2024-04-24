@@ -1,0 +1,202 @@
+// Default html styling //
+
+body {
+	scroll-behavior: smooth;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+main{
+
+}
+
+figure{
+	margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,i,span{
+	@include main-transition();
+	margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+
+}
+
+p{
+
+}
+
+ul{
+	margin-left: 0;
+	padding-left: 20px;
+}
+
+p,ul,ol,table{
+	color: inherit;
+	font-family: inherit;
+}
+
+a{
+	font-size: 20px;
+	color: inherit;
+	text-decoration: none;
+
+	&:hover{
+		color: $color1;
+	}
+}
+
+td{
+	padding-right: 30px;
+	vertical-align: top;
+	&:nth-last-child(1){
+		padding-right: 0;
+	}
+}
+
+// Theme classes styling //
+
+.full, .full-row, .full-container {
+	margin: 0 auto;
+	max-width: 1240px;
+	padding: 0 35px;
+
+	@media screen and (max-width: $screen_xs) {
+		padding: 0 15px;
+	}
+}
+
+//Flex rijen styling
+.row.flex-content{
+	position: relative;
+	z-index: 2;
+
+	.scrollto{
+		position: absolute;
+		width: 100%;
+		top: -80px;
+	}
+
+	$flex_padding : 80px;
+
+    &.padding-opt1 { //Geen
+        padding: 0;
+    }
+
+    &.padding-opt2 { //Boven
+        padding: $flex_padding 0 0;
+    }
+
+    &.padding-opt3 { //Onder
+        padding: 0 0 $flex_padding 0;
+    }
+
+    &.padding-opt4 { //Boven en Onder
+        padding: $flex_padding 0;
+    }
+}
+
+//Font awesome icon styling
+.icon{
+
+	i, .fa, .fas{
+		font-family: $font-awesome;
+		font-style: normal;
+
+		&:hover{
+			color: $color1;
+		}
+	}
+}
+
+//Standaard tekstblok styling
+.content, .text{
+	h2{
+		
+		font-size: 70px;
+		line-height: 80px;
+	}
+	p,ul,table{
+		margin-bottom: 1em;
+
+		&:nth-last-child(1){
+			margin-bottom: 0;
+		}
+	}
+	strong{
+
+	}
+	a{
+
+	}
+}
+
+//Button styling
+.block.button-repeater{
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 10px;
+}
+
+.button {
+	background-color: $color1;
+	color: $color5;
+	padding: 13px 17px;
+	line-height: 19px;
+	font-size: 16px;
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+
+	&:hover{
+		background-color: $color4;
+	}
+}
+
+.sc-button{
+	color: $color5;
+	padding: 13px 17px;
+	line-height: 19px;
+	font-size: 16px;
+	display: inline-block;
+	margin-top: 10px;
+	text-align: center;
+	text-transform: uppercase;
+
+	&.light{
+		color: $color4;
+		background-color: $color5;
+
+		&:hover{
+			
+		}
+	}
+	&.dark{
+		color: $color5;
+		background-color: $color4;
+
+		&:hover{
+			
+		}
+	}
+}
+
+#page-wrapper{
+    overflow-x: hidden;
+}
+
+.row {
+    &.flex-content {
+        &.row4 {
+            &.bg-gray {
+                background-color: $color7;
+            }
+        }
+    }
+}
+
+.bg-beige {
+    background-color: $color7 !important;
+}
+

@@ -1,0 +1,276 @@
+#main-header {
+    //margin-top: 0 !important;
+}
+
+.row {
+    
+    &.header {
+        &.bottom-header {
+            padding: 10px 0;
+            background-color: $color1;
+            
+            .full-row {
+                position: relative;
+                z-index: 999;
+                
+
+                .blocks-container {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .blocks-group {
+                        &.logo-group {
+                            max-width: 25%;
+
+                            .block{
+
+                                &.image{
+                                    height: 100%;
+                                }
+                            }
+                        }
+
+                        &.menu-group {
+                            width: 100%;
+                            justify-content: space-between;
+                            align-items: center;
+                            gap: 200px;
+                            color: $color5;
+                            margin-top: 20px;
+                            @include matchheight;
+
+                            #main-navigation {
+                               
+                                margin-right: unset;
+
+                                >div {
+                                    >ul {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        align-items: center;
+                                        gap: 50px;
+                                        text-transform: uppercase;
+
+                                        li {
+                                            position: relative; // Voegde position toe voor het positioneren van het pseudo-element
+
+                                            &:hover {
+                                                a {
+                                                    color: $color4;
+                                                }
+
+                                                &::after {
+                                                    content: "";
+                                                    position: absolute;
+                                                    left: 0;
+                                                    bottom: -10px; // Afstand van de lijn tot de tekst
+                                                    width: 100%;
+                                                    height: 4px; // Dikte van de lijn
+                                                    background-color: white; // Kleur van de lijn
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .header-wrap {
+                                display: flex;
+                                align-items: center;
+                                gap: 15px;
+                                flex-wrap: wrap;
+
+                                #theme-search {
+                                    position: relative;
+
+                                    &:hover {
+                                        i {
+                                            color: $color1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.sticky-active {}
+        }
+    }
+}
+
+&.admin-bar {
+    top: 32px;
+}
+.row {
+        
+    &.header {
+        &.top-header {
+            
+            background-color: $color6;
+       
+            .full-row {
+              .blocks-container{
+                .block {
+                    &.text {
+                        font-weight: bold;
+                    }
+                }
+              }
+            }
+       
+        }
+      
+    }
+}
+
+@media (max-width: $screen_ml) {
+     
+    #main-header {
+        //margin-top: 0 !important;
+    }
+    
+    .row {
+        min-width: 100vw;
+        
+        &.header {
+            &.bottom-header {
+                padding: 10px 0;
+                background-color: $color1;
+                
+                .full-row {
+                    position: relative;
+                    z-index: 999;
+                    
+    
+                    .blocks-container {
+                        display: flex;
+                        justify-content: space-between;
+    
+                        .blocks-group {
+                            &.logo-group {
+                                max-width: 25%;
+    
+                                .block{
+    
+                                    &.image{
+                                        height: 100%;
+                                    }
+                                }
+                            }
+    
+                            &.menu-group {
+                                justify-content: space-between;
+                                align-items: center;
+                                gap: 140px;
+                                color: $color5;
+                                margin-top: 20px;
+                                @include matchheight;
+                                .fa-bars:before{
+                                    display: flex;
+                                    float: right;
+                                }
+                                #main-navigation {
+                                    margin-right: unset;
+    
+                                    >div {
+                                        >ul {
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            align-items: center;
+                                            gap: 70px;
+    
+                                            li {
+                                                position: relative; // Voegde position toe voor het positioneren van het pseudo-element
+    
+                                                &:hover {
+                                                    a {
+                                                        color: $color4;
+                                                    }
+    
+                                                    &::after {
+                                                        content: "";
+                                                        position: absolute;
+                                                        left: 0;
+                                                        bottom: -10px; // Afstand van de lijn tot de tekst
+                                                        width: 100%;
+                                                        height: 4px; // Dikte van de lijn
+                                                        background-color: white; // Kleur van de lijn
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+    
+                                .header-wrap {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 15px;
+                                    flex-wrap: wrap;
+    
+                                    #theme-search {
+                                        position: relative;
+    
+                                        &:hover {
+                                            i {
+                                                color: $color1;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                &.sticky-active {}
+            }
+        }
+    }
+    
+    &.admin-bar {
+        top: 32px;
+    }
+    .row {
+            
+        &.header {
+            &.top-header {
+                
+                background-color: $color6;
+           
+                .full-row {
+                  .blocks-container{
+                    .block {
+                        &.text {
+                            font-weight: bold;
+                        }
+                    }
+                  }
+                }
+           
+            }
+          
+        }
+    }
+    
+
+}
+
+.current-menu-item{
+
+   
+     color: $color4;
+        
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -10px; // Afstand van de lijn tot de tekst
+            width: 100%;
+            height: 4px; // Dikte van de lijn
+            background-color: white; // Kleur van de lijn
+        }
+    }

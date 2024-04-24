@@ -1,0 +1,24 @@
+@import 'globals';
+@import 'includes/style';
+
+@import '../header-templates/header';
+@import '../footer-templates/footer';
+@import 'includes/sidebar';
+
+@import 'includes/search-page';
+@import 'includes/error-page';
+@import 'includes/pagination';
+@import 'includes/form';
+@import 'includes/single';
+
+@import '../flex-content/row1/row1';
+@import '../flex-content/row2/row2';
+@import '../flex-content/row3/row3';
+@import '../flex-content/row4/row4';
+@import '../flex-content/row5/row5';
+@import '../flex-content/row6/row6';
+@import '../flex-content/row7/row7';
+
+
+
+@import '../scss/includes/post_types/_recipe-overview-include';

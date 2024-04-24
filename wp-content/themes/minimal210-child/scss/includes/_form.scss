@@ -1,0 +1,87 @@
+// Formulier styling normaal (die in footer is anders, en word hieronder gestyled)
+.nf-form-title{
+
+	h3{
+
+	}
+}
+
+.nf-response-msg{
+	margin-top: 40px;
+
+	p{
+		font-size: 18px;
+	}
+}
+
+form{
+
+	.nf-before-form-content{
+		display: none;
+	}
+
+	.nf-form-content{
+		padding: 0;
+
+		.nf-field-container{
+
+			.nf-field{
+
+				.field-wrap{
+
+					.nf-field-label{
+						color: $color4;
+
+						label{
+
+						}
+					}
+
+					.nf-field-element{
+
+						textarea{
+							transition: 0s;
+							color: $color4;
+							resize: vertical;
+							min-height: 100px;
+							max-height: 400px;
+							height: 100px;
+						}
+
+						input{
+
+						}
+					}
+				}
+			}
+
+			.nf-after-field{
+
+			}
+		}
+
+		.submit-container{
+			margin-bottom: 0;
+
+			.nf-field{
+
+				.field-wrap{
+
+					.nf-field-element{
+
+						input{
+
+					        &:hover{
+
+					        }
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.nf-after-form-content{
+
+	}
+}

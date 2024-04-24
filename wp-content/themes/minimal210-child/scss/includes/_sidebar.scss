@@ -1,0 +1,28 @@
+.sidebar {
+    position: fixed;
+    right: 75px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    box-sizing: border-box;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: $color1;
+    box-shadow: 0 4px 8px 0 rgba($color4, 0.2);
+
+    .link {
+        a {
+            i {
+                font-size: 30px;
+                color: $color5;
+
+                &:hover {
+                    color: $color4;
+                }
+            }
+        }
+    }
+}

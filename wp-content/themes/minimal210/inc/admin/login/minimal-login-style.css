@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body .admin-email-confirm-form p{
+    color: black !important;
+}
+body.login {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    -webkit-box-shadow: inset 99999px 99999px 99999px 99999px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 99999px 99999px 99999px 99999px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 99999px 99999px 99999px 99999px rgba(0, 0, 0, 0.5);
+}
+
+.login h1 a {
+    background-image: url('BURO210-logo-wit-roze.png');
+    background-size:230px 100%;
+    width: 100%;
+    height: 40px;
+}
+
+.login form{
+    position: relative;
+    background: white;
+    border: none;
+    padding: 26px 24px 20px;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    transition: 0.2s;
+
+}
+.login form:hover {
+    transition: 0.2s;
+    position: relative;
+    background: white;
+    border: none;
+    padding: 26px 24px 20px;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.96) 0px 22px 70px 4px;
+}
+
+.login label{
+    color: black;
+    transition: 0.2s;
+    font-family: 'Montserrat', sans-serif;
+}
+.login form:hover label{
+    transition: 0.2s;
+    color: #EA177A;
+    font-family: 'Montserrat', sans-serif;
+}
+.login form p,.login form a,.login form h1,.login form h2,.login form h3{
+    color: black ;
+}
+.login .button-primary{
+    transition: 0.3s;
+    background: #EA177A;
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.login .button-primary:hover{
+    background: #7dc3c7;
+}
+.login #nav{
+    box-shadow: inset 0 16px 15px -8px rgb(0 0 0 / 88%);
+    margin: 0 20px;
+    padding: 15px 24px 5px;
+    background: #EA177A;
+}
+.login #backtoblog{
+    margin: 0 20px;
+    padding: 5px 24px 15px;
+    background: #EA177A;
+}
+.login #nav a{
+    color: #fff;
+    transition: 0.3s;
+    font-family: 'Montserrat', sans-serif;
+}
+.login #backtoblog a{
+    color: #fff;
+    transition: 0.3s;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login #nav a:hover{
+    color: black;
+}
+.login #backtoblog a:hover{
+    color: black;
+}
+.login .message{
+    border-left: 4px solid rgba(234, 23, 122,1);
+    color: rgba(234, 23, 122,1);
+    font-family: 'Montserrat', sans-serif;
+}
+.login .contact{
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+.login .contact a{
+    text-decoration: none;
+    color: #7dc3c7;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.2s;
+
+}
+.login .contact a:hover{
+    color: #ea177a;
+    transition: 0.2s;
+}
+.login a:focus{
+    box-shadow: none !important;
+}

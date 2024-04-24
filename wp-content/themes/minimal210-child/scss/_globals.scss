@@ -1,0 +1,170 @@
+//--// Fonts import //--//
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+//--// Fonts vars //--//
+$font1: 'Roboto', sans-serif;
+$font-awesome	: 'FontAwesome';
+$font2:  'Open-sans', sans-serif;
+
+//--// Screen width vars //--//
+$screen_menu	: 1240px;
+
+$screen_xl	: 1240px;
+$screen_l	: 1024px;
+$screen_ml  : 886px;
+$screen_m	: 768px;
+$screen_s	: 640px;
+$screen_xs	: 480px;
+$screen_xxs	: 320px;
+
+//--// Colors vars //--//
+$color1 : #E30066; // Rood
+$color2 : #EB2979; // Geel
+$color3 : #707070; // 
+$color4 : #000; // Zwart
+$color5 : #FFFFFF; // Wit
+$color6 : #414042; // Grijs
+$color7 : #E3DDD7; //Beige
+$color210 : #ed0579; // Buro210 roze
+ 
+
+//--// Custom Mixins //--//
+
+
+//--// Standaard Mixins //--//
+@mixin global-text-color($global-text-color: #000) {
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	a,
+	ul,
+	ol,
+	table {
+		color: $global-text-color;
+	}
+}
+
+@mixin main-transition($main-transition: 0.3s all ease) {
+	-moz-transition: $main-transition;
+	-o-transition: $main-transition;
+	-ms-transition: $main-transition;
+	-webkit-transition: $main-transition;
+	transition: $main-transition;
+}
+
+@mixin background-image($background-size: cover) {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: $background-size;
+}
+
+@mixin gridloop($minColumnWidth, $columnGap, $rowGap: $columnGap, $layout: auto-fit) {
+    --columnGap: #{$columnGap * 1px};
+    --rowGap: #{$rowGap * 1px};
+
+    display: grid;
+    grid-template-columns: repeat($layout, minmax(#{$minColumnWidth}px, 1fr));
+
+    @media screen and (max-width: #{$minColumnWidth + 70}px) {
+        grid-template-columns: 1fr;
+    }
+
+    grid-gap: var(--rowGap) var(--columnGap);
+
+    > {
+        --gap: inherit;
+        --columns: inherit;
+        min-width: 0; // Ensure flexibility
+        flex: 1 0 calc((100% - var(--columnGap) * (var(--columns) - 1)) / var(--columns));
+    }
+}
+
+
+@mixin flexgrid($columns, $columnGap, $rowGap: $columnGap) {
+	$cleanColumnGap: "";
+	$cleanRowGap: "";
+	$cleanColumnGap: append($cleanColumnGap, $columnGap * 1px);
+	$cleanRowGap: append($cleanRowGap, $rowGap * 1px);
+	--columnGap: #{$cleanColumnGap};
+	--rowGap: #{$cleanRowGap};
+	--columns: #{$columns};
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--rowGap) var(--columnGap);
+
+	> {
+		--gap: inherit;
+		--columns: inherit;
+		flex-basis: calc((100% - var(--columnGap) (var(--columns) - 1)) / var(--columns));
+	}
+}
+
+@mixin shadow() {
+	box-shadow: 0px 3px 6px #00000029;
+}
+
+// Gebruik .class{ @include flexbox; }
+@mixin flexbox {
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+// Gebruik .class{ @include inline-flex; }
+@mixin inline-flex {
+
+	display: -webkit-inline-box;
+	display: -moz-inline-box;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+}
+
+// Gebruik .class{ @include flex-wrap( waarde ) }
+// Mogelijke waardes: nowrap | wrap | wrap-reverse
+@mixin flex-wrap($value: wrap) {
+
+	-webkit-flex-wrap: $value;
+
+	@if $value ==nowrap {
+		-ms-flex-wrap: none;
+	}
+
+	@else {
+		-ms-flex-wrap: $value;
+	}
+
+	flex-wrap: $value;
+}
+
+@mixin matchheight {
+
+	@include flexbox;
+	@include flex-wrap;
+}
+
+@mixin transform($transforms) {
+
+	-moz-transform: $transforms;
+	-o-transform: $transforms;
+	-ms-transform: $transforms;
+	-webkit-transform: $transforms;
+	transform: $transforms;
+}
+
+@mixin transition($transition...) {
+
+	-moz-transition: $transition;
+	-o-transition: $transition;
+	-ms-transition: $transition;
+	-webkit-transition: $transition;
+	transition: $transition;
+}

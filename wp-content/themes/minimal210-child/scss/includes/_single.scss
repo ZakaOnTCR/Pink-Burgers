@@ -1,0 +1,76 @@
+.row-single {
+    &.single {
+        &.row1 {
+            .full-row {
+                .blocks-container {
+                    .button-group1 {
+                            padding-top: 50px;
+                            font-size: 15px;
+                        .button-text {
+                            font-size: 15px;
+
+                            display: flex;
+                            justify-content: flex-end;
+                            gap: 20px;
+
+                        }
+                    }
+                    .block-group {
+                        
+
+                        &.button-group {
+                            display: flex;
+                            justify-content: center;
+
+                            .button {
+                                
+                            }
+                        }
+
+                        &.image-content {
+                            padding: 113px 0 50px 0;
+
+                            .image {
+                                height: 380px;
+                                width: 100%;                              
+                                @include background-image();
+                            }
+                        }
+
+                        &.text-group {
+                            .title {
+                                h2 {
+                                    color: $color1;
+                                    font-size: 25px;
+                                    font-weight: 200;
+                                }
+                            }
+
+                            .text {
+                                p {
+                                    // Stijl voor de tekst
+                                }
+                            }
+
+                            .button {
+                                margin-bottom: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.fa-solid, .fas {
+    font-weight: 900;
+    display: flex !important;
+    align-items: center !important;
+}
+
+a, i, span {
+    
+    transition: 0s all ease;
+    margin: 0;
+}

@@ -1,0 +1,342 @@
+#main-footer {
+    .row.footer{
+        &.top {
+            padding-bottom: 30px;
+            background-color: $color1;
+
+            .full-row{
+                .blocks-container{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    width: 100%;
+
+                    .block {
+                        
+
+                        &.left{
+                           .inner-block {
+                           
+                            &.text {
+                               
+
+                                font-size: $font2;
+                                p {
+                                  a{
+                                        font-size: 16px;
+                                    }  
+                                      img{   
+                                         margin: 50px;
+                                         
+                                      }
+                                  }
+                            }
+                           
+                        
+                        }
+                        }
+
+                       
+                        &.mid {
+                            display: flex;
+                           
+                            .inner-block {
+                                &.text {
+                                    
+                                    font-family: $font2;
+                                    p {
+                                       
+
+                                        img{
+                                           margin: 25px;
+                                          
+                                         
+                                           
+                                        }
+                                    }
+                                }
+                               
+                            
+                            }
+                            
+                        }
+                        &.right{
+                           
+                            .inner-block {
+                                &.text {
+                                    margin-top: 45px;
+                                    p {
+                                       a{
+                                        font-size: 16px;
+                                       }
+
+                                        img{
+                                           
+                                           
+                                        }
+                                    }
+                                }
+                                &.repeater {
+                                    display: flex;
+                                    gap: 10px;
+                                    float: right;
+                                    .icon {
+                                        
+                                        a {
+                                            i {
+                                                font-size: 30px;
+                                                color: $color5;
+                                            }
+                                        }
+                                    }
+                                }
+                            
+                            }
+                            
+                        }
+                        
+                    }
+                }
+            }
+        }
+
+        &.bottom{
+            background-color: $color4;
+            padding: 5px 0;
+            
+            .full-row{
+                .blocks-container{
+                    display: flex;
+
+                    .block{
+                        width: 50%;
+
+                        &.left{
+                            * {
+                                color: $color5;
+                            }
+                        }
+
+                        &.right{
+                            text-align: right;
+
+                            a {
+                                color: $color5;
+                                position: relative;
+
+                                .linkwrap{
+                                    color: $color5;
+                                }
+
+                                .black {
+                                    color: $color5;
+
+                                    .black {
+                                        @include main-transition();
+                                        color: $color5;
+                                    }
+                                    .pink {
+                                        @include main-transition();
+                                        color: $color5;
+
+                                    }
+                                }
+                                &:after {
+                                    @include main-transition(0.25s);
+                                    content: '';
+                                    position: absolute;
+                                    left: 0;
+                                    top: 100%;
+                                    width: 0%;
+                                    height: 1px;
+                                    background-color: $color5;
+                                    z-index: 1;
+                                }
+                                &:hover {
+                                    color: unset;
+
+                                    &:after {
+                                        width: 100%;
+                                    }
+                                    .black {
+                                        .black {
+                                            color: $color5;
+                                        }
+                                        .pink {
+                                            color: $color210;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $screen_l){
+    #main-footer {
+        .row {
+            &.footer {
+                &.top {
+                    .full-row {
+                        .blocks-container {
+                            flex-direction: column;
+
+                            * {
+                                text-align: center !important;
+                            }
+
+                            .block {
+                                &.right {
+                                    .inner-block {
+                                        &.repeater {
+                                            float: unset;
+                                            justify-content: center;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// @media (max-width: 1306px) {
+//     #main-footer .row.footer.top {
+//         padding-bottom: 30px;
+//         background-color: $color1;
+
+//         .full-row .blocks-container {
+           
+//             .block {
+//                 width: 100%;
+//                 margin-right: 0px;
+
+//                 &.left {
+//                     .inner-block.text {
+//                         margin-left: -130px;
+//                     }
+//                     margin-right: -750px;
+//                     margin-left: 0;
+//                 }
+
+//                 &.mid {
+//                     margin: 0;
+//                     margin-left: 200px;
+//                 }
+
+//                 &.right {
+//                     .inner-block.text {
+//                         margin-right: 800px;
+//                     }
+//                     .inner-block.repeater {
+//                         justify-content: center;
+//                         flex-wrap: wrap;
+//                         margin-right: 800px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     #main-footer .row.footer.bottom {
+//         padding: 20px 0;
+//         background-color: $color4;
+
+//         .full-row .blocks-container {
+//             flex-direction: column;
+
+//             .block {
+//                 width: 100%;
+
+//                 &.left, &.right {
+//                     text-align: center;
+//                 }
+
+//                 &.right {
+//                     a:after {
+//                         left: 50%;
+//                         transform: translateX(-50%);
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 864px) {
+//     #main-footer .row.footer.top {
+//         padding-bottom: 30px;
+//         background-color: $color1;
+
+//         .full-row .blocks-container {
+//             flex-direction: column;
+            
+
+//             .block {
+//                 max-width: 100%;
+//                 margin-right: 0px;
+
+//                 &.left {
+//                     .inner-block.text {
+//                         margin-left: -130px;
+//                     }
+//                     margin-right: -750px;
+//                     margin-left: 0;
+//                 }
+
+//                 &.mid {
+//                     margin: 0;
+//                     margin-left: 200px;
+//                 }
+
+//                 &.right {
+//                     .inner-block.text {
+//                         margin-right: 400px;
+//                     }
+//                     .inner-block.repeater {
+//                         justify-content: center;
+//                         flex-wrap: wrap;
+//                         margin-right: 400px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     #main-footer .row.footer.bottom {
+//         padding: 20px 0;
+//         background-color: $color4;
+
+//         .full-row .blocks-container {
+//             flex-direction: column;
+
+//             .block {
+//                 width: 100%;
+
+//                 &.left, &.right {
+//                     text-align: center;
+//                 }
+
+//                 &.right {
+//                     a:after {
+//                         left: 50%;
+//                         transform: translateX(-50%);
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+

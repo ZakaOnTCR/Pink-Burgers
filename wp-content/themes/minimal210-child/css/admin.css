@@ -1,0 +1,6 @@
+
+/* Remove ACF Better Search notice*/
+.notice[data-notice=acf-better-search] {
+
+    display: none!important;
+}

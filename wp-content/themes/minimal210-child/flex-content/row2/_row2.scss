@@ -1,0 +1,29 @@
+.row2{
+    &.flex-content{
+        .full-row{
+            .blocks-container{
+                .block{
+                    &.text{
+
+                        h2{
+                            margin: 20px;
+                        }
+                        p{
+                            margin: 50px;
+                        }
+
+                    }
+                    &.link{
+                        margin: 50px;
+                        justify-content: center;                       
+                        display: flex;
+                        button{
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

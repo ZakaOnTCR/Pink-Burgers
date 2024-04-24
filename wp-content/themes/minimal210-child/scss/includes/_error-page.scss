@@ -1,0 +1,26 @@
+.row {
+
+	&.error-page {
+
+		&.row1 {
+			padding: 160px 0;
+
+			.full-row {
+
+				.blocks-container {
+
+					.block {
+						text-align: center;
+
+						&.title {
+
+							h2 {
+								margin-bottom: 20px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
