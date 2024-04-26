@@ -1,6 +1,6 @@
 <?php
 
-$top_header= get_field ("header_top" , 'option');
+$top_header = get_field ("header_top" , 'option');
 
 //r row bottom header
 $h_logo           = get_field('h_logo', 'option');

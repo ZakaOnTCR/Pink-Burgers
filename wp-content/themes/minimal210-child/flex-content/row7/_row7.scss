@@ -1,0 +1,296 @@
+.row7{
+.full-row {
+    .blocks-container {
+        .block {
+
+            padding-top: 30px;
+            &.left {
+                h2{
+                    text-align: left;
+                    font-weight: 300;
+                    font-size: 70px;
+
+                }
+                p{
+                    padding-top: 30px;
+
+                }
+            }
+            &.right{
+                display: flex;
+                flex-direction: row-reverse;
+                width: 100%;
+                align-items:right;
+               
+                
+            }
+
+            &.text {
+                display: flex;
+                flex-direction: column ;
+                width: 50%;
+                margin-top: -60px;
+                padding-bottom: 50px;
+                h2{
+                    
+                    font-size: 25px;
+                    font-weight: 200;
+
+                }
+                p{
+
+                }
+                .link {
+                    a{
+                        font-size: 15px;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                    
+                    padding-bottom: 60px;
+                }
+            }
+        }
+    }
+}
+}
+
+
+.nf-form-cont{
+      width: 50%;
+ }
+
+ .label-above .field-wrap, .label-below .field-wrap {
+     flex-direction: unset !important; 
+     flex-flow: unset !important;
+    
+}
+
+
+.nf-field-element{
+    display: flex;
+    justify-content: right;
+   
+}
+
+.nf-form-content {
+
+}
+
+.nf-field-label{
+    max-width: 5%;
+    margin-right: 140px;
+
+}
+
+h3{
+    font-size: 25px;
+    font-weight: 200;
+    color: $color1;
+    padding-bottom: 30px;
+}
+
+
+#tekst{
+font-weight: 200;
+}
+.nf-form-content {
+    input,textarea  {
+         background: #E9E9E9 !important;
+         border: unset !important; 
+         border-radius: unset !important; 
+         box-shadow: unset !important;
+         color: $color5 ; 
+         transition: all .5s;
+    }
+    button,
+    input[type="button"],
+    input[type="submit"]
+    
+    {
+        background: $color1 !important;
+        padding: 0 30px;
+        max-height: 40px;
+
+    }
+    
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+            @media (max-width: $screen_l) {
+
+                .row7{
+                    .full-row {
+                        .blocks-container {
+                            .block {
+                                width: 100%;
+                    
+                                padding-top: 30px;
+                                &.left {
+                                    width: 100%;
+                                    h2{
+                                        text-align: center;
+                                        font-weight: 300;
+                                        font-size: 70px;
+                    
+                                    }
+                                    p{
+                                        text-align: center;
+                                        padding-top: 30px;
+                    
+                                    }
+                                }
+                                &.right{
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column-reverse;
+                                    
+                                    align-items: center;
+                                                    
+                                    
+                                }
+                    
+                                &.text {
+                                    
+                                    display: flex;
+                                    flex-direction: column;
+                                    width: 50%;
+                                    margin-top: -60px;
+                                    padding-bottom: 50px;
+                                    text-align: center;
+    
+                                    h2{
+                                        
+                                        font-size: 25px;
+                                        font-weight: 200;
+                    
+                                    }
+                                    p{
+                    
+                                    }
+                                    .link {
+                                        a{
+                                            font-size: 15px;
+                                        }
+                                        p{
+                                            font-size: 15px;
+                                        }
+                                        
+                                        padding-bottom: 60px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    }
+                    
+                    
+                    
+                    
+                    .label-above .field-wrap, .label-below .field-wrap {
+                        flex-direction: unset !important; 
+                        flex-flow: unset!important;
+                        
+                    }
+                    
+
+            }
+
+
+
+
+
+
+
+
+
+
+        @media (max-width: $screen_ml) {
+
+            .row7{
+                .full-row {
+                    .blocks-container {
+                        .block {
+                            width: 100%;
+                
+                            padding-top: 30px;
+                            &.left {
+                                width: 100%;
+                                h2{
+                                    text-align: center;
+                                    font-weight: 300;
+                                    font-size: 70px;
+                
+                                }
+                                p{
+                                    text-align: center;
+                                    padding-top: 30px;
+                
+                                }
+                            }
+                            &.right{
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column-reverse;
+                                
+                                align-items: center;
+                                                
+                                
+                            }
+                
+                            &.text {
+                                
+                                display: flex;
+                                flex-direction: column;
+                                width: 50%;
+                                margin-top: -60px;
+                                padding-bottom: 50px;
+                                text-align: center;
+
+                                h2{
+                                    
+                                    font-size: 25px;
+                                    font-weight: 200;
+                
+                                }
+                                p{
+                
+                                }
+                                .link {
+                                    a{
+                                        font-size: 15px;
+                                    }
+                                    p{
+                                        font-size: 15px;
+                                    }
+                                    
+                                    padding-bottom: 60px;
+                                }
+                            }
+                        }
+                    }
+                }
+                }
+                
+                
+                
+                .label-above .field-wrap, .label-below .field-wrap {
+                    flex-direction: column !important;
+                    flex-flow: wrap !important;
+                    
+                }
+                
+
+        }

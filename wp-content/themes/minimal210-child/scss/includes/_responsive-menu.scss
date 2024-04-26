@@ -123,6 +123,7 @@ $hide_on : $show_on +1px;
         object-fit: contain;
         max-width: calc(100% - 65px);
         height: 45px;
+        padding-left: 10px;
     }
 
     >div {
@@ -135,8 +136,8 @@ $hide_on : $show_on +1px;
     color: $menu_content_color;
     font-size: 20px;
     position: fixed;
-    -webkit-backface-visibility: hidden;
-    background: $menu_background_color;
+    -webkit-backface-visibility:visible;
+    background-color : $menu_content_color ;
     height: 100%;
     top: 0;
     left: 0;
@@ -276,7 +277,7 @@ $hide_on : $show_on +1px;
             display: inline-block;
             width: 100%;
             text-decoration: none;
-            color: $menu_content_color;
+            color: $menu_background_color;
         }
 
         .responsive-submenu {

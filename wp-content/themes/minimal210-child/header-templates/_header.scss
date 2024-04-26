@@ -99,6 +99,18 @@
         }
     }
 }
+.search-submit{
+    padding: 10px;
+    background-color: $color210;
+    border: solid 1px black !important;
+}
+
+.search-field{
+    background-color: $color210;
+    border: solid 1px black !important;
+    
+    
+}
 
 &.admin-bar {
     top: 32px;
@@ -274,4 +286,25 @@
             height: 4px; // Dikte van de lijn
             background-color: white; // Kleur van de lijn
         }
+    }
+
+
+    @media (max-width: $screen_xl) {
+        .current-menu-item{
+
+   
+            color: $color4;
+               
+       
+               &::after {
+                   content: "";
+                   position: unset;
+                   left: unset;
+                   bottom: unset; // Afstand van de lijn tot de tekst
+                   width: unset;
+                   height: unset; // Dikte van de lijn
+                   background-color: unset; // Kleur van de lijn
+               }
+           }
+        
     }

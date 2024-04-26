@@ -216,7 +216,7 @@ if (!function_exists('min_responsive_menu')) {
         // This gets displayed only when the menu goes to full width.
         // You can change this in scss > includes > _responsive-menu.scss
 
-        $h_logo = get_field('h_logo', 'option');
+        $h_logo = get_field('h_logo_responsive', 'option');
 
         if ($h_logo && $trigger_counter == 0) {
             $output .= '<div class="top-wrap">';

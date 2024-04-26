@@ -9,8 +9,6 @@ jQuery( document ).ready( function($) {
 		dots: true,
 		infinite: true,
         pauseOnHover: false,
-		
-		
 	});
 
 });

@@ -1,0 +1,203 @@
+.row5 {
+    height: 100%;
+    background-color: $color5;
+
+    &.flex-content {
+        &.row5 {
+            .full-row {
+                .blocks-container {
+                    .block {
+                        &.overview {
+                            display: flex;
+                            gap: 40px;
+
+                            .one-recipe {
+                                border-bottom: 10px solid $color1;
+                                width: calc(50% - 20px);
+
+                                .block-group {
+                                    &.top {
+                                        .block {
+                                            &.image {
+                                                min-height: 295px;
+                                                background-repeat: no-repeat;
+                                            }
+                                        }
+                                    }
+
+                                    &.bottom {
+                                        padding: 50px;
+                                        background-color: $color5;
+                                        
+
+                                        .block {
+                                            &.title-recept {
+                                                font-size: 30px;
+                                                color: $color1;
+                                            }
+
+                                            &.text-recept {
+                                                margin-top: 20px;
+                                                margin-bottom: 20px;
+
+                                                h4 {
+                                                }
+
+                                                p {
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &.text {
+                            padding: 20px 0 20px 0;
+                            
+
+                            h2 {
+                                font-weight: 200;
+                                padding: 30px 0 140px 0;
+
+                            }
+                        }
+
+                        &.link {
+
+
+                            a {
+                            }
+
+                        }
+                        
+                    }
+                     .block-under {
+                        padding: 10px 0 10px 0;
+                        display: flex;
+                        width: 100%;
+                              .text { 
+                                width: 80%;
+                                    h2 {
+                                        font-size: 50px;
+                                        font-weight: 200;
+                                    }
+                                }
+                                .block{
+                                    // width: 60%;
+                                    &.link{
+
+                                    }
+                                }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+    @media (max-width: $screen_ml) {
+        .row5 {
+            height: 100%;
+            background-color: $color5;
+
+            &.flex-content {
+                &.row5 {
+                    .full-row {
+                        .blocks-container {
+                            .block {
+                                &.overview {
+                                    display: flex;
+                                    gap: 40px;
+                                    .one-recipe{
+                                        &.one-item{
+                                            width: unset
+                                        }
+                                    }
+                                    
+                                    @include gridloop(300, 35, 20, auto-fill);
+                                }
+
+                                &.text {
+                                    padding: 20px;
+
+                                    h2 {
+                                        margin: 20px;
+                                    }
+                                }
+
+                                &.link {
+                                    display: flex;
+                                    justify-content: center;
+                                    color: $color5;
+
+                                    a {
+                                        font-size: 20px;
+                                        height: 30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+     @media (max-width: $screen_ml) {
+        .row5 {
+            height: 100%;
+            background-color: $color5;
+
+            &.flex-content {
+                &.row5 {
+                    .full-row {
+                        .blocks-container {
+                            .block {
+                                &.overview {
+                                    
+                                    @include gridloop(300, 35, 20, auto-fill);
+                                }
+
+                                &.text {
+                                    padding: 20px;
+
+                                    h2 {
+                                        margin: 20px;
+                                    }
+                                }
+
+                                &.link {
+                                    display: flex;
+                                    justify-content: center;
+                                    color: $color5;
+
+                                    a {
+                                        font-size: 20px;
+                                        height: 30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .facetwp-facet{
+        float: right;
+    }
+
+.facetwp-page{
+           
+}
+.facetwp-page{
+    display: inline-block;
+    margin-right: 6px;
+    background-color: $color6;
+    color: white;
+    padding: 8px 20px 8px 20px !important;
+}

@@ -1,0 +1,94 @@
+.row{
+    &.flex-content{
+        &.row6{
+            .full-row{
+                .blocks-container{
+                    .block{
+                        &.text-image{
+                            display: flex;
+                            gap: 30px;
+
+                            .text{
+                                max-width: 50%;
+                                h2{
+                                    padding-bottom: 30px;
+                                }
+
+                            }
+                            .block{
+                            &.link{
+
+                                padding-top: 50px;
+                            }
+                        }
+                            .image-content {
+                                gap: 20px;
+                                display: flex;
+                                flex-direction: column;
+                                padding-top: 140px;
+                                .image {
+                                    @include background-image;
+                                    height: 340px;
+                                    width: 500px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:   $screen_l) {
+    .row{
+        &.flex-content{
+            &.row6{
+                .full-row{
+                    .blocks-container{
+                        .block{
+                            display: flex;
+                            flex-direction: column;
+                            &.text-image{
+                                display: flex;
+                                gap: 30px;
+    
+                                .text{
+                                    max-width: 100%;
+                                    h2{
+                                        text-align: center;
+                                        padding-bottom: 30px;
+                                    }
+    
+                                }
+                                .block{
+                                &.link{
+    
+                                    padding-top: 50px;
+                                }
+                            }
+                                .image-content {
+                                    gap: 20px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    padding-top: 140px;
+                                    .image {
+                                        @include background-image;
+                                        height: auto;
+                                        width: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+  
+   
+
+}
